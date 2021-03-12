@@ -19,7 +19,7 @@
 #include QMK_KEYBOARD_H
 // #include "muse.h" //idk maybe i can use it some how?
 
-
+// do i need this ? why do some people include it and others dont?
 enum planck_layers {
   _QWERTY,
   _CALC,
@@ -41,8 +41,8 @@ enum planck_layers {
 
 // my mods
 #define ENAV LT(_NAVI, KC_ESC) // t KC_ESC, h mo(navi)
-#define LBAR LT(_CALC, KC_SPC)// t space, h mo(calc), (tt tg(calc). see tapdance?)
-#define RBAR LSFT_T(KC_TAB) // t tab, h shift, tt capslock???
+#define LBAR LT(_CALC, KC_TAB)// t tab, h mo(calc), (tt tg(calc)???)
+#define RBAR LSFT_T(KC_SPC) // t space, h shift, (tt capslock???)
 #define ZSHFT LSFT_T(KC_P0) // 
 
 #define TADJUST TG(_ADJUST)
